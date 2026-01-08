@@ -1,34 +1,45 @@
 export default function Home() {
   return (
     <>
-      {/* HERO */}
-      <section style={{
-        display: "grid",
-        gridTemplateColumns: "1.3fr .7fr",
-        gap: 32,
-        alignItems: "center",
-        padding: "32px"
-      }}>
-        {/* LEFT */}
+      {/* HERO PREMIUM */}
+      <section
+        style={{
+          display: "grid",
+          gridTemplateColumns: "1.2fr .8fr",
+          gap: 32,
+          alignItems: "center",
+          padding: 32
+        }}
+      >
+        {/* TEXTE */}
         <div>
-          <span style={{
-            display: "inline-block",
-            fontSize: 12,
-            fontWeight: 900,
-            color: "#1A6F7A",
-            marginBottom: 8
-          }}>
-            COMPARADOR FINANCEIRO
-          </span>
+          {/* SELO */}
+          <div
+            style={{
+              display: "inline-flex",
+              alignItems: "center",
+              gap: 8,
+              border: "2px solid var(--gold)",
+              borderRadius: 999,
+              padding: "6px 12px",
+              fontWeight: 900,
+              fontSize: 12,
+              color: "#6a5200",
+              background: "rgba(212,175,55,.15)",
+              marginBottom: 12
+            }}
+          >
+            ⭐ Melhor de 2025
+          </div>
 
           <h1 style={{ marginBottom: 12 }}>
             Compare contas e cartões bancários no Brasil
           </h1>
 
           <p style={{ fontSize: 17, maxWidth: 520 }}>
-            Compare bancos digitais e tradicionais de forma clara,
-            independente e gratuita. Escolha a melhor opção para o
-            seu perfil financeiro.
+            Comparador financeiro independente. Compare bancos digitais
+            e tradicionais, taxas e benefícios — de forma clara,
+            gratuita e atualizada.
           </p>
 
           <div style={{ display: "flex", gap: 12, marginTop: 18, flexWrap: "wrap" }}>
@@ -37,85 +48,101 @@ export default function Home() {
           </div>
 
           <p style={{ marginTop: 14, fontSize: 13, color: "#555" }}>
-            ✔ Comparações imparciais · ✔ Sem custo · ✔ Atualizado regularmente
+            ✔ Transparente · ✔ Sem custo · ✔ Atualizado regularmente
           </p>
         </div>
 
-        {/* RIGHT IMAGE PLACEHOLDER */}
-        <div style={{
-          background: "linear-gradient(135deg, rgba(26,111,122,.25), rgba(26,111,122,.05))",
-          borderRadius: 20,
-          height: 300,
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          fontWeight: 900,
-          color: "#1A6F7A",
-          fontSize: 18
-        }}>
-          IMAGE HERO
+        {/* IMAGE PLACEHOLDER (PREMIUM) */}
+        <div
+          style={{
+            height: 320,
+            borderRadius: 20,
+            background:
+              "linear-gradient(135deg, rgba(26,111,122,.22), rgba(26,111,122,.06))",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            color: "#1A6F7A",
+            fontWeight: 900,
+            fontSize: 18,
+            letterSpacing: ".5px"
+          }}
+        >
+          IMAGE FINTECH
         </div>
       </section>
 
-      {/* TOPS */}
+      {/* TOP PICKS */}
       <section>
-        <h2>Top bancos em destaque</h2>
+        <h2>Top escolhas do Comparafin</h2>
 
-        <div style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(3, 1fr)",
-          gap: 18
-        }}>
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(3, 1fr)",
+            gap: 18
+          }}
+        >
           <div className="card">
+            <span
+              style={{
+                display: "inline-block",
+                fontSize: 12,
+                fontWeight: 900,
+                color: "#1A6F7A",
+                marginBottom: 6
+              }}
+            >
+              Conta digital
+            </span>
             <strong>Nubank</strong>
-            <p>Conta digital sem taxa e app líder no Brasil.</p>
+            <p>Conta sem taxa e app líder no Brasil.</p>
+            <a className="btn" href="/contas">Ver conta</a>
           </div>
 
           <div className="card">
+            <span
+              style={{
+                display: "inline-block",
+                fontSize: 12,
+                fontWeight: 900,
+                color: "#1A6F7A",
+                marginBottom: 6
+              }}
+            >
+              Custo-benefício
+            </span>
             <strong>Inter</strong>
             <p>Transferências ilimitadas e serviços completos.</p>
+            <a className="btn" href="/contas">Ver conta</a>
           </div>
 
           <div className="card">
+            <span
+              style={{
+                display: "inline-block",
+                fontSize: 12,
+                fontWeight: 900,
+                color: "#1A6F7A",
+                marginBottom: 6
+              }}
+            >
+              Pontos
+            </span>
             <strong>C6 Bank</strong>
             <p>Programa de pontos e opções de cartão.</p>
-          </div>
-        </div>
-      </section>
-
-      {/* HOW */}
-      <section>
-        <h2>Como funciona o Comparafin</h2>
-
-        <div style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(3, 1fr)",
-          gap: 18
-        }}>
-          <div className="card">
-            <strong>1. Compare</strong>
-            <p>Analisamos taxas, benefícios e condições.</p>
-          </div>
-
-          <div className="card">
-            <strong>2. Escolha</strong>
-            <p>Selecione a opção ideal para seu perfil.</p>
-          </div>
-
-          <div className="card">
-            <strong>3. Solicite</strong>
-            <p>Redirecionamento seguro para o banco.</p>
+            <a className="btn" href="/cartoes">Ver cartões</a>
           </div>
         </div>
       </section>
 
       {/* TRUST */}
       <section>
-        <h2>Transparência e confiança</h2>
+        <h2>Independente e transparente</h2>
         <p>
-          O Comparafin é um comparador independente. Podemos receber
-          comissão por links afiliados, sem custo adicional para você.
-          Isso não influencia nossas análises.
+          O Comparafin é um comparador financeiro independente.
+          Podemos receber comissão por links afiliados, sem custo adicional
+          para você. Isso não influencia nossas análises.
         </p>
       </section>
     </>
