@@ -46,7 +46,7 @@ export default function RootLayout({ children }) {
   style={{
     marginTop: 48,
     borderTop: "1px solid var(--border)",
-    background: "#fff"
+    background: "#f3f2ef"
   }}
 >
           <div
