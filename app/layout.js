@@ -43,12 +43,12 @@ export default function RootLayout({ children }) {
         </main>
 
         <footer
-          style={{
-            marginTop: 48,
-            borderTop: "1px solid var(--border)",
-            background: "#fff"
-          }}
-        >
+  style={{
+    marginTop: 48,
+    borderTop: "1px solid var(--border)",
+    background: "#fff"
+  }}
+>
           <div
             className="container"
             style={{
