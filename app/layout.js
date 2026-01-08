@@ -10,10 +10,25 @@ export default function RootLayout({ children }) {
     <html lang="pt-BR">
       <body>
         <header>
-          <div className="container" style={{ display: "flex", gap: 16, alignItems: "center", justifyContent: "space-between" }}>
+          <div
+            className="container"
+            style={{
+              display: "flex",
+              gap: 16,
+              alignItems: "center",
+              justifyContent: "space-between"
+            }}
+          >
             <div className="brand">Comparafin</div>
 
-            <nav style={{ display: "flex", gap: 14, alignItems: "center", flexWrap: "wrap" }}>
+            <nav
+              style={{
+                display: "flex",
+                gap: 14,
+                alignItems: "center",
+                flexWrap: "wrap"
+              }}
+            >
               <a href="/">Início</a>
               <a href="/contas">Contas</a>
               <a href="/cartoes">Cartões</a>
@@ -26,7 +41,8 @@ export default function RootLayout({ children }) {
         <main className="container">
           {children}
         </main>
-              <footer
+
+        <footer
           style={{
             marginTop: 48,
             borderTop: "1px solid var(--border)",
@@ -86,3 +102,7 @@ export default function RootLayout({ children }) {
             </div>
           </div>
         </footer>
+      </body>
+    </html>
+  );
+}
