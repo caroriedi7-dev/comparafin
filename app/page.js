@@ -4,89 +4,47 @@ export default function Home() {
       {/* HERO */}
       <section style={{
         display: "grid",
-        gridTemplateColumns: "1.2fr .8fr",
-        gap: 24,
-        alignItems: "center"
+        gridTemplateColumns: "1.3fr .7fr",
+        gap: 32,
+        alignItems: "center",
+        padding: "32px"
       }}>
-        {/* TEXTE */}
+        {/* LEFT */}
         <div>
-          <h1>Compare os melhores bancos do Brasil</h1>
-          <p>
-            O Comparafin ajuda você a comparar contas e cartões bancários
-            de forma simples, transparente e atualizada.
+          <span style={{
+            display: "inline-block",
+            fontSize: 12,
+            fontWeight: 900,
+            color: "#1A6F7A",
+            marginBottom: 8
+          }}>
+            COMPARADOR FINANCEIRO
+          </span>
+
+          <h1 style={{ marginBottom: 12 }}>
+            Compare contas e cartões bancários no Brasil
+          </h1>
+
+          <p style={{ fontSize: 17, maxWidth: 520 }}>
+            Compare bancos digitais e tradicionais de forma clara,
+            independente e gratuita. Escolha a melhor opção para o
+            seu perfil financeiro.
           </p>
 
-          <div style={{ display: "flex", gap: 12, marginTop: 16, flexWrap: "wrap" }}>
+          <div style={{ display: "flex", gap: 12, marginTop: 18, flexWrap: "wrap" }}>
             <a className="btn" href="/contas">Comparar contas</a>
             <a className="btn" href="/cartoes">Comparar cartões</a>
           </div>
 
-          <p style={{ marginTop: 12, fontSize: 13, color: "#555" }}>
-            +10.000 usuários já compararam bancos com o Comparafin
+          <p style={{ marginTop: 14, fontSize: 13, color: "#555" }}>
+            ✔ Comparações imparciais · ✔ Sem custo · ✔ Atualizado regularmente
           </p>
         </div>
 
-        {/* IMAGE PLACEHOLDER */}
+        {/* RIGHT IMAGE PLACEHOLDER */}
         <div style={{
-          background: "linear-gradient(135deg, rgba(26,111,122,.15), rgba(26,111,122,.05))",
-          borderRadius: 16,
-          height: 260,
+          background: "linear-gradient(135deg, rgba(26,111,122,.25), rgba(26,111,122,.05))",
+          borderRadius: 20,
+          height: 300,
           display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          fontWeight: 900,
-          color: "#1A6F7A"
-        }}>
-          IMAGE HERO
-        </div>
-      </section>
-
-      {/* TOP BANKS */}
-      <section>
-        <h2>Top bancos em destaque</h2>
-
-        <div style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(3, 1fr)",
-          gap: 16
-        }}>
-          <div>
-            <strong>Nubank</strong>
-            <p>Conta digital sem taxa e app líder</p>
-          </div>
-
-          <div>
-            <strong>Inter</strong>
-            <p>Transferências ilimitadas</p>
-          </div>
-
-          <div>
-            <strong>C6 Bank</strong>
-            <p>Programa de pontos</p>
-          </div>
-        </div>
-      </section>
-
-      {/* WHY */}
-      <section>
-        <h2>Por que usar o Comparafin?</h2>
-        <ul>
-          <li>✔ Comparações claras e atualizadas</li>
-          <li>✔ Sem custo para o usuário</li>
-          <li>✔ Transparência sobre monetização</li>
-          <li>✔ Comparador independente</li>
-        </ul>
-      </section>
-
-      {/* CTA */}
-      <section>
-        <h2>Comece agora</h2>
-        <p>
-          Compare contas e cartões bancários e escolha o banco ideal
-          para o seu perfil financeiro.
-        </p>
-        <a className="btn" href="/contas">Ver contas bancárias</a>
-      </section>
-    </>
-  );
-}
+          align
