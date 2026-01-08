@@ -46,7 +46,7 @@ export default function RootLayout({ children }) {
   style={{
     marginTop: 48,
     borderTop: "1px solid var(--border)",
-    background: "#f3f2ef"
+    background: "linear-gradient(180deg, #f7f5f2, #eef3f4)"
   }}
 >
           <div
