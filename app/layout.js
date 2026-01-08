@@ -42,11 +42,12 @@ export default function RootLayout({ children }) {
           {children}
         </main>
 
-        <footer
+       <footer
   style={{
     marginTop: 48,
-    borderTop: "1px solid var(--border)",
-    background: "linear-gradient(180deg, #f7f5f2, #eef3f4)"
+    borderTop: "1px solid rgba(255,255,255,0.15)",
+    background: "var(--petrol)",
+    color: "#fff"
   }}
 >
           <div
