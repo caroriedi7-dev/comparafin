@@ -1,154 +1,92 @@
 export default function Preview() {
   return (
     <>
-      {/* HERO */}
-      <section
-        style={{
-          display: "grid",
-          gridTemplateColumns: "1.2fr .8fr",
-          gap: 32,
-          alignItems: "center",
-          padding: 32
-        }}
-      >
+      <section className="v2-hero">
         <div>
-          <div
-            style={{
-              display: "inline-flex",
-              alignItems: "center",
-              gap: 8,
-              border: "2px solid var(--gold)",
-              borderRadius: 999,
-              padding: "6px 12px",
-              fontWeight: 900,
-              fontSize: 12,
-              background: "rgba(212,175,55,.15)",
-              marginBottom: 12
-            }}
-          >
-            ⭐ Melhor de 2025
-          </div>
-
-          <h1>Compare bancos, contas e cartões no Brasil</h1>
-
-          <p style={{ fontSize: 17, maxWidth: 520 }}>
-            Comparafin é um comparador financeiro independente.
-            Compare bancos digitais e tradicionais com clareza,
-            transparência e conteúdo editorial de qualidade.
+          <div className="v2-selo-inline">⭐ Melhor de 2025</div>
+          <h1>Compare as Melhores Contas e Cartões no Brasil</h1>
+          <p>
+            Comparafin é um comparador financeiro independente. Compare bancos
+            digitais e tradicionais com clareza e confiança.
           </p>
 
-          <div style={{ display: "flex", gap: 12, marginTop: 18 }}>
-            <a className="btn" href="/contas">Comparar contas</a>
-            <a className="btn" href="/cartoes">Comparar cartões</a>
+          <div className="v2-hero-actions">
+            <a className="v2-btn primary" href="/contas">Comparar Contas</a>
+            <a className="v2-btn secondary" href="/cartoes">Comparar Cartões</a>
           </div>
         </div>
 
-        <div
-          style={{
-            height: 320,
-            borderRadius: 20,
-            background:
-              "linear-gradient(135deg, rgba(26,111,122,.25), rgba(26,111,122,.06))",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            fontWeight: 900,
-            color: "#1A6F7A"
-          }}
-        >
-          IMAGE HERO
+        <div className="v2-hero-media">
+          <div className="v2-selo">
+            <div>
+              <span>ANÁLISES IMPARCIAIS</span>
+              <strong>Comparafin</strong>
+              <span>APROVADO</span>
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* CATEGORIES */}
-      <section>
-        <h2>O que você deseja comparar?</h2>
-
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(3, 1fr)",
-            gap: 18
-          }}
-        >
-          <div className="card">
-            <strong>Contas bancárias</strong>
+      <h2 className="v2-section-title">Escolha o que deseja comparar</h2>
+      <div className="v2-grid-2">
+        <div className="v2-card v2-feature">
+          <div>
+            <h3>Contas Bancárias</h3>
             <p>Compare taxas, benefícios e serviços.</p>
-            <a className="btn" href="/contas">Ver contas</a>
+            <a className="v2-btn primary" href="/contas">Comparar</a>
           </div>
+          <div className="v2-feature-media" />
+        </div>
 
-          <div className="card">
-            <strong>Cartões de crédito</strong>
+        <div className="v2-card v2-feature">
+          <div>
+            <h3>Cartões de Crédito</h3>
             <p>Anuidade, limite e benefícios.</p>
-            <a className="btn" href="/cartoes">Ver cartões</a>
+            <a className="v2-btn primary" href="/cartoes">Comparar</a>
           </div>
+          <div className="v2-feature-media" />
+        </div>
+      </div>
 
-          <div className="card">
-            <strong>Guias e artigos</strong>
-            <p>Conteúdo editorial para decidir melhor.</p>
-            <a className="btn" href="/artigos">Ler artigos</a>
+      <h2 className="v2-section-title">Como funciona?</h2>
+      <div className="v2-card">
+        <div className="v2-grid-3">
+          <div className="v2-step">
+            <div className="v2-icon">1</div>
+            <div><strong>Pesquise</strong><p>Explore e filtre as opções.</p></div>
+          </div>
+          <div className="v2-step">
+            <div className="v2-icon">2</div>
+            <div><strong>Compare</strong><p>Veja benefícios lado a lado.</p></div>
+          </div>
+          <div className="v2-step">
+            <div className="v2-icon">3</div>
+            <div><strong>Escolha</strong><p>Solicite com confiança.</p></div>
           </div>
         </div>
-      </section>
+      </div>
 
-      {/* COMO FUNCIONA */}
-      <section>
-        <h2>Como funciona o Comparafin</h2>
-
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(3, 1fr)",
-            gap: 18
-          }}
-        >
-          <div className="card">
-            <strong>1. Compare</strong>
-            <p>Analisamos bancos e produtos.</p>
-          </div>
-
-          <div className="card">
-            <strong>2. Escolha</strong>
-            <p>Veja prós, contras e recomendações.</p>
-          </div>
-
-          <div className="card">
-            <strong>3. Solicite</strong>
-            <p>Redirecionamento seguro.</p>
-          </div>
+      <h2 className="v2-section-title">Seleção do editor</h2>
+      <div className="v2-grid-3">
+        <div className="v2-card">
+          <div className="v2-thumb" />
+          <strong>Melhores Contas Digitais de 2025</strong>
+          <p>Ranking atualizado com critérios claros.</p>
+          <a className="v2-btn primary" href="/artigos">Ler</a>
         </div>
-      </section>
-
-      {/* EDITORIAL */}
-      <section>
-        <h2>Seleção do editor</h2>
-
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(3, 1fr)",
-            gap: 18
-          }}
-        >
-          <div className="card">
-            <strong>Melhores contas digitais em 2025</strong>
-            <p>Ranking atualizado com critérios claros.</p>
-            <a className="btn" href="#">Ler artigo</a>
-          </div>
-
-          <div className="card">
-            <strong>Nubank ou Inter?</strong>
-            <p>Comparação completa entre os dois.</p>
-            <a className="btn" href="#">Ler artigo</a>
-          </div>
-
-          <div className="card">
-            <strong>Cartão sem anuidade vale a pena?</strong>
-            <p>Guia completo para escolher.</p>
-            <a className="btn" href="#">Ler artigo</a>
-          </div>
+        <div className="v2-card">
+          <div className="v2-thumb" />
+          <strong>Nubank ou Inter: Qual o Melhor?</strong>
+          <p>Comparativo completo e atualizado.</p>
+          <a className="v2-btn primary" href="/artigos">Ler</a>
         </div>
-      </section>
+        <div className="v2-card">
+          <div className="v2-thumb" />
+          <strong>Cartão Sem Anuidade: Guia Completo</strong>
+          <p>Como escolher o melhor cartão.</p>
+          <a className="v2-btn primary" href="/artigos">Ler</a>
+        </div>
+      </div>
     </>
   );
 }
