@@ -278,3 +278,55 @@ th{
   .v2-hero{grid-template-columns:1fr}
   .v2-grid-2,.v2-grid-3{grid-template-columns:1fr}
 }
+/* HERO Comparafin (light, no badge) */
+.heroLight{
+  background: #fbfaf7;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 32px;
+  display: grid;
+  grid-template-columns: 1.2fr .8fr;
+  gap: 28px;
+  align-items: center;
+}
+.heroLight h1{
+  margin: 0 0 10px;
+  font-size: 44px;
+  line-height: 1.08;
+}
+.heroLight p{
+  margin: 0 0 14px;
+  font-size: 16px;
+  color: #2a2a2a;
+  max-width: 620px;
+}
+.heroChecks{
+  display:flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 6px 0 18px;
+  color: #3a3a3a;
+  font-size: 14px;
+}
+.heroActions{
+  display:flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.heroMedia{
+  height: 340px;
+  border-radius: 22px;
+  background: linear-gradient(135deg, rgba(26,111,122,.12), rgba(26,111,122,.04));
+  border: 1px solid rgba(26,111,122,.16);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight: 900;
+  color: #1A6F7A;
+  letter-spacing: .4px;
+}
+@media (max-width: 900px){
+  .heroLight{ grid-template-columns: 1fr; }
+  .heroLight h1{ font-size: 34px; }
+  .heroMedia{ height: 240px; }
+}
